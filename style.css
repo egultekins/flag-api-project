@@ -1,3 +1,6 @@
+@media (min-width: 1000px) {
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -6,8 +9,7 @@
 
 html, body {
 
-
-    font-family: "Nunito", sans-serif;
+font-family: "Nunito", sans-serif;
  
 }
 
@@ -27,15 +29,13 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1440px;
     margin-inline: auto;
 
 
 
   
 }
-
-
 
 .country{
     width: 200px;
@@ -46,6 +46,7 @@ html, body {
     transition: transform 0.2s ease-in-out;
     margin-top: 15px;
     display: inline-block;
+    max-width: fit-content;
    
  
 
@@ -61,14 +62,17 @@ h3{
 
 .countries-card-container{
     display: flex;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-inline: auto;
     max-width: 1000px;
-   margin-inline: auto;
+    padding-top: 50px;
   
 
 }
+
+
+
 
 .infos{
     display: flex;
@@ -81,4 +85,87 @@ h3{
 
 .country img{
     width: 200px;
+    height: 133.33px; 
+    object-fit: cover; 
+    border-radius: 4px; 
+}
+
+   
+}
+@media (max-width: 900px) {
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    html, body {
+        font-family: "Nunito", sans-serif;
+    }
+
+    .title {
+        font-weight: 800;
+        font-size: 18px; 
+    }
+
+    .header_container {
+        box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+        padding: 10px 16px; 
+    }
+
+    .header_contents {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        margin-inline: auto;
+    }
+
+    .country {
+        width: 75%; 
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+        padding-bottom: 8px; 
+        transition: transform 0.2s ease-in-out;
+        margin-top: 10px;
+        display: inline-block;
+        
+    }
+
+    .country:hover {
+        transform: scale(1.04);
+    }
+
+    h3 {
+        font-size: 20px; 
+        padding: 5px 8px;
+    }
+
+    .countries-card-container {
+        display: flex;
+        gap: 15px; 
+        flex-wrap: wrap;
+        margin-inline: auto;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        
+    }
+
+    .infos {
+        display: flex;
+        flex-direction: column;
+        gap: 2px; 
+        font-size: 15px; 
+        padding: 5px 8px;
+    }
+
+    .country img {
+        width: 100%;
+        height: 150px; 
+        object-fit: cover; 
+        border-radius: 4px; 
+    }
 }
