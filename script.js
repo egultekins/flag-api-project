@@ -6,7 +6,9 @@ fetch("https://restcountries.com/v3.1/all")
   
     const countryCards = data.map((country) => {
       return `
+       
         <div class="country">
+          <a href="country.html"  rel="noopener noreferrer" class="country-link">
           <img src="${country.flags.svg}" alt="${country.name.common}">
           <h3>${country.name.common}</h3>
           <div class="infos">
@@ -14,7 +16,9 @@ fetch("https://restcountries.com/v3.1/all")
             <p><b>Region:</b> ${country.region}</p>
             <p><b>Capital:</b> ${country.capital ? country.capital[0] : "N/A"}</p>
           </div>
+          </a>
         </div>
+       
       `;
     });
 
@@ -23,3 +27,6 @@ fetch("https://restcountries.com/v3.1/all")
   .catch((error) => {
     console.error("Error fetching country data:", error);
   });
+
+
+

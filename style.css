@@ -38,27 +38,30 @@ font-family: "Nunito", sans-serif;
 }
 
 .country{
-    width: 200px;
+
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1);
-    padding-bottom: 10px ;
+    padding-bottom: 28px;
     transition: transform 0.2s ease-in-out;
-    margin-top: 15px;
-    display: inline-block;
-    max-width: fit-content;
-   
+    margin-top : 15px;
+    padding-right: 5px;
+    width: 200px;
+
  
 
+}
+
+.country h3{
+    font-size: 0.97em;
+    padding-left: 10px;
+    margin-top: 5px;
 }
 
 .country:hover{
     transform: scale(1.04);
 }
 
-h3{
-    padding:  5px 10px;
-}
 
 .countries-card-container{
     display: flex;
@@ -69,6 +72,12 @@ h3{
     padding-top: 50px;
   
 
+}
+
+.country a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -85,7 +94,7 @@ h3{
 
 .country img{
     width: 200px;
-    height: 133.33px; 
+    height: 150px; 
     object-fit: cover; 
     border-radius: 4px; 
 }
@@ -121,26 +130,13 @@ h3{
         margin-inline: auto;
     }
 
-    .country {
-        width: 75%; 
-        border-radius: 4px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-        padding-bottom: 8px; 
-        transition: transform 0.2s ease-in-out;
-        margin-top: 10px;
-        display: inline-block;
-        
-    }
+
 
     .country:hover {
         transform: scale(1.04);
     }
 
-    h3 {
-        font-size: 20px; 
-        padding: 5px 8px;
-    }
+
 
     .countries-card-container {
         display: flex;
@@ -162,10 +158,5 @@ h3{
         padding: 5px 8px;
     }
 
-    .country img {
-        width: 100%;
-        height: 150px; 
-        object-fit: cover; 
-        border-radius: 4px; 
-    }
+
 }
