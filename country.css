@@ -1,0 +1,211 @@
+@media (min-width: 1000px) {
+
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    html, body {
+    
+    font-family: "Nunito", sans-serif;
+     
+    }
+    
+    .title {
+        font-weight: 800;
+    
+    }
+    
+    .header_container{
+        box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1);
+        padding-inline: 24px;
+        padding: 20px;
+        
+    }
+    
+    .header_contents {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin-inline: auto;
+    
+    
+    
+      
+    }
+    
+  
+
+    .backbutton{
+        padding: 10px;
+        color: black;
+        width:10%;
+        box-shadow: 0 8px 16px 0px rgba(0,0,0,0.1);
+        margin-left: 50px;
+        margin-top: 50px;
+        
+    }
+
+
+    .backbutton a{
+   
+        color: black;
+        font-size:1em;
+ 
+        
+    }
+
+    .backbutton i{
+   
+        margin-left: 25px;
+ 
+        
+    }
+
+
+
+    .countries-card-container-2 {
+
+
+        margin-inline: auto;
+        max-width: 100%;
+
+        
+    }
+
+    .country-details-cont{
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+ 
+
+    }
+
+    .country-details-cont img {
+
+        width:  40%;
+       
+    }
+ 
+    .info-table{
+
+        display: flex;
+        align-items: start;
+        padding-left: 100px;
+        flex-flow: column;
+
+    }
+
+ 
+
+    .country-details-cont h3{
+        font-size: 3em;
+        flex-shrink: 1;
+    }
+
+    .row{
+        padding-top: 10px;
+       
+      
+ 
+      
+       
+
+    }
+
+
+    .alignprops {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+      
+    }
+
+
+   
+       
+    }
+    @media (max-width: 900px) {
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+    
+        html, body {
+            font-family: "Nunito", sans-serif;
+        }
+    
+        .title {
+            font-weight: 800;
+            font-size: 18px; 
+        }
+    
+        .header_container {
+            box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+            padding: 10px 16px; 
+        }
+    
+        .header_contents {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+            margin-inline: auto;
+        }
+    
+        .country {
+            width: 75%; 
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+            padding-bottom: 8px; 
+            transition: transform 0.2s ease-in-out;
+            margin-top: 10px;
+            display: inline-block;
+            
+        }
+    
+        .country:hover {
+            transform: scale(1.04);
+        }
+
+
+
+    
+        .countries-card-container {
+            display: flex;
+            gap: 15px; 
+            flex-wrap: wrap;
+            margin-inline: auto;
+            max-width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            
+        }
+    
+        .infos {
+            display: flex;
+            flex-direction: column;
+            gap: 2px; 
+            font-size: 15px; 
+            padding: 5px 8px;
+        }
+    
+        .country img {
+            width: 400%;
+            height: 400px; 
+            object-fit: cover; 
+            border-radius: 4px; 
+        }
+    }
+    
+
+
+
+
