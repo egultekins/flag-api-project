@@ -23,7 +23,7 @@ fetch("https://restcountries.com/v3.1/all")
              data-native="${country.name.official}" 
              data-population="${country.population}" 
              data-region="${country.region}" 
-             country-subregion="${country.status ? country.status : "N/A" }"
+             data-subregion="${country.subregion ? country.subregion : "N/A" }"
              data-capital="${country.capital ? country.capital[0] : "N/A"}"
              data-flag="${country.flags.svg}">
           <img src="${country.flags.svg}" alt="${country.name.common}">
