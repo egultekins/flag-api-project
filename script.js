@@ -12,6 +12,9 @@ fetch("https://restcountries.com/v3.1/all")
     const region = document.querySelector(".country-region");
     const subregion = document.querySelector(".country-subregion")
     const capital = document.querySelector(".country-capital");
+    const language = document.querySelector(".country-lang");
+    const currency = document.querySelector(".country-currency");
+    const domain = document.querySelector(".country-domain");
 
 
     // Render country cards
@@ -25,6 +28,9 @@ fetch("https://restcountries.com/v3.1/all")
              data-region="${country.region}" 
              data-subregion="${country.subregion ? country.subregion : "N/A" }"
              data-capital="${country.capital ? country.capital[0] : "N/A"}"
+             data-lang="${country.languages ? Object.values(country.languages).join(", ") : "N/A"}"
+             data-currency="${country.currencies ? Object.values(country.currencies).map(curr => `${curr.name}`).join(", ") : "N/A"}"
+             data-domain="${country.tld ? country.tld.join(", ") : "N/A"}"
              data-flag="${country.flags.svg}">
           <img src="${country.flags.svg}" alt="${country.name.common}">
           <h3>${country.name.common}</h3>
@@ -52,6 +58,10 @@ fetch("https://restcountries.com/v3.1/all")
       const countrySubRegion = countryCard.dataset.subregion;
       const countryCapital = countryCard.dataset.capital;
       const countryFlag = countryCard.dataset.flag;
+      const countryLang = countryCard.dataset.lang;
+      const countryCurrency = countryCard.dataset.currency;
+      const countryDomain = countryCard.dataset.domain;
+
 
   
 
@@ -63,6 +73,10 @@ fetch("https://restcountries.com/v3.1/all")
       subregion.textContent = countrySubRegion;
       region.textContent = countryRegion;
       capital.textContent = countryCapital;
+      language.textContent = countryLang;
+      currency.textContent = countryCurrency;
+      domain.textContent = countryDomain;
+     
 
      
 

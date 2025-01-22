@@ -152,6 +152,39 @@ font-family: "Nunito", sans-serif;
   
 }
 
+.search-filter{
+
+    display: inline-flex;
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+.search-input{
+
+    padding: 5px;
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+    width: 20%;
+   
+}
+
+.search-input input{
+
+    overflow: hidden;
+    flex-grow: 1;
+    width: -webkit-fill-available;
+
+    
+}
+
+.filter{
+    padding: 5px;
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+    width: 20%;
+}
+
+
+
 .back-button{
 
     margin-top: 86px;
