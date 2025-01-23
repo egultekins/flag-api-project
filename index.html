@@ -12,7 +12,7 @@
 </head>
 <body>
   
-    <header class="header_container">
+    <header class="header_container"> <!-- Webpage-header content -->
             <div class="header_contents">
                 <h2 class="title">Where in the world?</h2>
                 <p> <i class="fa-solid fa-moon"></i>&nbsp;&nbsp;Dark Mode</p>
@@ -22,19 +22,22 @@
 
         <div class="search-filter">
             <div class="search-input">
-
-                <input type="text" placeholder="Write input">
-
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for a country...">
             </div>
-
             <div class="filter">
-
-                selam2
-
+                <select>
+                    <option value="all">Filter by Region</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                </select>
             </div>
         </div>
-
-        <div class="countries-card-container">
+        
+        <div class="countries-card-container">  <!--Inner html code comes from script.js -->
 
             
 
@@ -50,7 +53,7 @@
 
             <div class="back-button"> <a href="index.html" style="text-decoration: none; color:black"> <i class="fa-solid fa-arrow-left"> </i>  &nbsp;Back </a> </div>
             
-            <div class="country-details-cont" style="display: none;">
+            <div class="country-details-cont" style="display: none;">  <!-- Unseen by default. you should click on any country card for it to appear  -->
 
 
                     
@@ -60,7 +63,7 @@
 
                     
 
-                    <div class="info-table">
+                    <div class="info-table"> <!-- country details obtained via api -->
                     
                             <h3 class="country-name"></h3>
 

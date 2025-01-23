@@ -15,6 +15,7 @@ fetch("https://restcountries.com/v3.1/all")
     const language = document.querySelector(".country-lang");
     const currency = document.querySelector(".country-currency");
     const domain = document.querySelector(".country-domain");
+    const filters = document.querySelector(".search-filter");
 
 
     // Render country cards
@@ -84,6 +85,7 @@ fetch("https://restcountries.com/v3.1/all")
       container.style.display = "none";
       detailsContainer.style.display = "block";
       MainContent.style.display = "flex"
+      filters.style.display = "none";
     });
 
     // Back button functionality
@@ -92,6 +94,7 @@ fetch("https://restcountries.com/v3.1/all")
       detailsContainer.style.display = "none";
       MainContent.style.display = "none";
       container.style.display = "flex";
+      filters.style.display = "flex";
     });
   })
   .catch((error) => {
